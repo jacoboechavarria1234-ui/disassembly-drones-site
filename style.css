@@ -2,7 +2,7 @@
 body {
     background-color: #0d0d1a; /* Fondo muy oscuro, casi negro */
     color: #DDDDDD; /* Texto principal en blanco suave */
-    font-family: 'Arial', sans-serif; /* <-- ¡CAMBIADO A TIPOGRAFÍA MODERNA! */
+    font-family: 'Arial', sans-serif; 
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -12,7 +12,7 @@ body {
 h1, h2 {
     color: #FFD700; /* Dorado para títulos principales */
     text-transform: uppercase;
-    letter-spacing: 3px; /* Más espaciado para un look técnico */
+    letter-spacing: 3px; 
     margin-top: 0;
 }
 
@@ -20,7 +20,7 @@ h1, h2 {
 .header {
     background-color: #0d0d1a;
     padding: 20px 0 10px 0;
-    border-bottom: 2px solid #FFD700; /* Dorado */
+    border-bottom: 2px solid #FFD700; 
     margin-bottom: 20px;
 }
 
@@ -32,7 +32,7 @@ h1, h2 {
 }
 
 .status {
-    color: #FFD700; /* Dorado */
+    color: #FFD700; 
     font-weight: bold;
     font-size: 0.9em;
     padding-bottom: 5px;
@@ -40,7 +40,7 @@ h1, h2 {
 
 .status.online::before {
     content: "◉ ";
-    color: #00FF00; /* Punto verde de "online" (se mantiene) */
+    color: #00FF00; 
 }
 
 /* --- Contenedor Principal --- */
@@ -54,8 +54,8 @@ h1, h2 {
 /* --- Barra de Navegación (NAV) --- */
 .main-nav {
     background-color: #0a0a14; 
-    border-top: 1px solid #FF5733; /* Rojo de acento/advertencia */
-    border-bottom: 1px solid #FF5733; /* Rojo de acento/advertencia */
+    border-top: 1px solid #FF5733; 
+    border-bottom: 1px solid #FF5733; 
     padding: 10px 0;
     margin-bottom: 40px;
     text-align: center;
@@ -74,7 +74,7 @@ h1, h2 {
 }
 
 .main-nav a {
-    color: #FFD700; /* Dorado en los enlaces */
+    color: #FFD700; 
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
@@ -84,17 +84,17 @@ h1, h2 {
 
 .main-nav a:hover {
     color: #FFFFFF; 
-    text-shadow: 0 0 5px #FFD700; /* Brillo Dorado */
+    text-shadow: 0 0 5px #FFD700; 
 }
 
 /* --- Contenido de Inicio --- */
 .intro-text {
     font-size: 1.1em;
     padding: 20px;
-    border: 1px dashed #FFD700; /* Dorado */
+    border: 1px dashed #FFD700; 
     margin-bottom: 30px;
     text-align: left;
-    color: #EEEEEE; /* Texto más claro para la introducción */
+    color: #EEEEEE; 
 }
 
 
@@ -112,8 +112,8 @@ h1, h2 {
 }
 
 .drone-ficha-static h2 {
-    color: #FFD700; /* Dorado */
-    border-bottom: 2px solid #FF5733; /* Rojo */
+    color: #FFD700; 
+    border-bottom: 2px solid #FF5733; 
     padding-bottom: 10px;
     margin-bottom: 20px;
     width: 100%;
@@ -129,7 +129,7 @@ h1, h2 {
 
 .datos {
     flex-grow: 1;
-    color: #DDDDDD; /* Texto de datos en blanco suave */
+    color: #DDDDDD; 
 }
 
 .datos p {
@@ -137,21 +137,21 @@ h1, h2 {
 }
 
 .datos strong {
-    color: #FFD700; /* Dorado para las etiquetas (Clase, Función) */
+    color: #FFD700; 
 }
 
 /* --- Separadores --- */
 .separator {
     border: none;
     height: 1px;
-    background-color: #FFD700; /* Dorado */
+    background-color: #FFD700; 
     opacity: 0.5;
     margin: 40px 0;
 }
 
 /* --- Referencias y Disclaimer --- */
 .referencias h2, .disclaimer h2 {
-    color: #FFD700; /* Dorado */
+    color: #FFD700; 
 }
 
 .referencias a {
@@ -164,9 +164,9 @@ h1, h2 {
 }
 
 .alerta {
-    color: #FFD700; /* Amarillo para el texto de alerta */
-    background-color: #331a1a; /* Fondo rojo oscuro para la caja */
-    border: 1px solid #FF5733; /* Borde rojo */
+    color: #FFD700; 
+    background-color: #331a1a; 
+    border: 1px solid #FF5733; 
     padding: 15px;
     margin: 20px 0;
     font-weight: bold;
@@ -213,7 +213,9 @@ h1, h2 {
         text-shadow: 2px 0 0 #FF5733, -2px 0 0 #FFD700;
         transform: translate(0);
     }
-}/* --- Posicionamiento del Traductor (AJUSTE) --- */
+}
+
+/* --- Posicionamiento del Traductor (AJUSTE MÓVIL) --- */
 /* Posición para escritorio (esquina superior derecha) */
 #google_translate_element {
     position: absolute;
@@ -225,15 +227,16 @@ h1, h2 {
 /* Media Query: AJUSTE PARA MÓVILES (Menos de 600px) */
 @media (max-width: 600px) {
     #google_translate_element {
-        position: relative; /* Deja de ser absoluta */
+        position: relative; 
         top: auto;
         right: auto;
-        /* Lo centramos debajo del logo y lo separamos un poco */
         margin: 0 auto 10px auto; 
         width: 100%;
         text-align: center;
     }
-}/* --- Sección de Fan Art --- */
+}
+
+/* --- Sección de Fan Art --- */
 .fan-art-section {
     margin-top: 60px;
     margin-bottom: 60px;
@@ -263,7 +266,7 @@ h1, h2 {
     width: 100%;
     height: auto;
     display: block;
-    object-fit: cover; /* Asegura que la imagen cubra el espacio */
+    object-fit: cover; 
 }
 
 .art-credits {
