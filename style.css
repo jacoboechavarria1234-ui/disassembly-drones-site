@@ -1,0 +1,216 @@
+/* --- Estilos Globales y Tipografía (MODIFICADO AQUÍ) --- */
+body {
+    background-color: #0d0d1a; /* Fondo muy oscuro, casi negro */
+    color: #DDDDDD; /* Texto principal en blanco suave */
+    font-family: 'Arial', sans-serif; /* <-- ¡CAMBIADO A TIPOGRAFÍA MODERNA! */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #FFD700; /* Dorado para títulos principales */
+    text-transform: uppercase;
+    letter-spacing: 3px; /* Más espaciado para un look técnico */
+    margin-top: 0;
+}
+
+/* --- Encabezado y Estado --- */
+.header {
+    background-color: #0d0d1a;
+    padding: 20px 0 10px 0;
+    border-bottom: 2px solid #FFD700; /* Dorado */
+    margin-bottom: 20px;
+}
+
+.site-logo {
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.status {
+    color: #FFD700; /* Dorado */
+    font-weight: bold;
+    font-size: 0.9em;
+    padding-bottom: 5px;
+}
+
+.status.online::before {
+    content: "◉ ";
+    color: #00FF00; /* Punto verde de "online" (se mantiene) */
+}
+
+/* --- Contenedor Principal --- */
+.ficha-tecnica {
+    max-width: 1100px; 
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left; 
+}
+
+/* --- Barra de Navegación (NAV) --- */
+.main-nav {
+    background-color: #0a0a14; 
+    border-top: 1px solid #FF5733; /* Rojo de acento/advertencia */
+    border-bottom: 1px solid #FF5733; /* Rojo de acento/advertencia */
+    padding: 10px 0;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    justify-content: center; 
+}
+
+.main-nav li {
+    margin: 0 15px;
+}
+
+.main-nav a {
+    color: #FFD700; /* Dorado en los enlaces */
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover {
+    color: #FFFFFF; 
+    text-shadow: 0 0 5px #FFD700; /* Brillo Dorado */
+}
+
+/* --- Contenido de Inicio --- */
+.intro-text {
+    font-size: 1.1em;
+    padding: 20px;
+    border: 1px dashed #FFD700; /* Dorado */
+    margin-bottom: 30px;
+    text-align: left;
+    color: #EEEEEE; /* Texto más claro para la introducción */
+}
+
+
+/* --- Estilos de las Fichas de Drones --- */
+.drone-ficha-static {
+    padding: 30px; 
+    margin-bottom: 40px;
+    text-align: left; 
+    background-color: #1a1a2e; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+    display: flex; 
+    gap: 40px; 
+    align-items: flex-start; 
+}
+
+.drone-ficha-static h2 {
+    color: #FFD700; /* Dorado */
+    border-bottom: 2px solid #FF5733; /* Rojo */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.drone-img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+.datos {
+    flex-grow: 1;
+    color: #DDDDDD; /* Texto de datos en blanco suave */
+}
+
+.datos p {
+    margin-bottom: 10px;
+}
+
+.datos strong {
+    color: #FFD700; /* Dorado para las etiquetas (Clase, Función) */
+}
+
+/* --- Separadores --- */
+.separator {
+    border: none;
+    height: 1px;
+    background-color: #FFD700; /* Dorado */
+    opacity: 0.5;
+    margin: 40px 0;
+}
+
+/* --- Referencias y Disclaimer --- */
+.referencias h2, .disclaimer h2 {
+    color: #FFD700; /* Dorado */
+}
+
+.referencias a {
+    color: #FFD700; 
+    text-decoration: none;
+}
+
+.referencias a:hover {
+    text-decoration: underline;
+}
+
+.alerta {
+    color: #FFD700; /* Amarillo para el texto de alerta */
+    background-color: #331a1a; /* Fondo rojo oscuro para la caja */
+    border: 1px solid #FF5733; /* Borde rojo */
+    padding: 15px;
+    margin: 20px 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* --- Pie de Página (Footer) --- */
+.footer {
+    background-color: #0a0a14;
+    color: #FFD700;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+    font-size: 0.8em;
+    border-top: 1px solid #FFD700;
+}
+
+/* ####################################################### */
+/* --- Efecto GLITCH (MANTENIDO CON NUEVOS COLORES) --- */
+/* ####################################################### */
+
+@keyframes glitch {
+    0% {
+        text-shadow: 2px 0 0 #FF5733, -2px 0 0 #FFD700; 
+        transform: translate(0);
+    }
+    20% {
+        text-shadow: -2px -2px 0 #FF5733, 2px 2px 0 #FFD700;
+        transform: translate(2px, 2px);
+    }
+    40% {
+        text-shadow: 4px -4px 0 #FF5733, -4px 4px 0 #FFD700;
+        transform: translate(-4px, -4px);
+    }
+    60% {
+        text-shadow: 2px 0 0 #FF5733, -2px 0 0 #FFD700;
+        transform: translate(0);
+    }
+    80% {
+        text-shadow: -4px -2px 0 #FF5733, 4px 2px 0 #FFD700;
+        transform: translate(2px, 2px);
+    }
+    100% {
+        text-shadow: 2px 0 0 #FF5733, -2px 0 0 #FFD700;
+        transform: translate(0);
+    }
+}
