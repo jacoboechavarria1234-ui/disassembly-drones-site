@@ -213,4 +213,24 @@ h1, h2 {
         text-shadow: 2px 0 0 #FF5733, -2px 0 0 #FFD700;
         transform: translate(0);
     }
+}/* --- Posicionamiento del Traductor (AJUSTE) --- */
+/* Posición para escritorio (esquina superior derecha) */
+#google_translate_element {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+/* Media Query: AJUSTE PARA MÓVILES (Menos de 600px) */
+@media (max-width: 600px) {
+    #google_translate_element {
+        position: relative; /* Deja de ser absoluta */
+        top: auto;
+        right: auto;
+        /* Lo centramos debajo del logo y lo separamos un poco */
+        margin: 0 auto 10px auto; 
+        width: 100%;
+        text-align: center;
+    }
 }
