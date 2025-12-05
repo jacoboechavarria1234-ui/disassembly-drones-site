@@ -292,4 +292,17 @@ h1, h2 {
     .fan-art-grid {
         grid-template-columns: 1fr; 
     }
+}/* --- Ajuste para Navegación en Móviles --- */
+@media (max-width: 700px) {
+    .main-nav ul {
+        /* Permite que los elementos de la lista se envuelvan en la siguiente línea */
+        flex-wrap: wrap; 
+        /* Añade un poco de espacio en la parte superior/inferior si se envuelven */
+        padding: 5px 0; 
+    }
+    
+    .main-nav li {
+        /* Reduce el margen entre los botones para que quepan más */
+        margin: 5px 8px; 
+    }
 }
